@@ -33,7 +33,7 @@ namespace ConnectedLessons.Pages
 
         private bool ValidateLogin()
         {
-            return ElementsHelper.IsVisible(_driver.FindElement, PlayAndPracticeElementsPath.PracticalPhrasesButton) != null ? true : false;
+            return ElementsHelper.IsVisible(_driver.FindElement, PlayAndPracticeElementsPath.PlayAndPracticeMenuButton) != null ? true : false;
         }
     }
 }

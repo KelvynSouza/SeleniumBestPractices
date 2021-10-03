@@ -1,3 +1,4 @@
+using ConnectedLessons.Pages;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Edge;
@@ -13,6 +14,8 @@ namespace ConnectedLessons
 
         private EdgeDriver _driver;
 
+        
+
         [TestInitialize]
         public void EdgeDriverInitialize()
         {
@@ -26,9 +29,10 @@ namespace ConnectedLessons
         }
 
         [TestMethod]
-        public void VerifyPageTitle()
+        public void AnswerQuestions()
         {
-           
+            var login = new Login(_driver, "", "");
+
         }
 
         [TestCleanup]

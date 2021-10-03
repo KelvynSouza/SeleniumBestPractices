@@ -4,6 +4,8 @@ namespace ConnectedLessons.ElementsPath
 {
     public static class PraticalPhrasesElementsPath
     {
+        public static By PhrasesCount
+            => By.XPath("//span[@class='ml-lg']");
         public static By PhraseInputBox
              => By.Id("formControlsTextarea");
         public static By ValidateButton
@@ -14,5 +16,6 @@ namespace ConnectedLessons.ElementsPath
             => By.XPath("//div[not(contains(@class,'hidden'))]/button/span[text()='Próximo']");
         public static By CompletionProof
             => By.XPath("//span[text()='Parabéns você concluiu os practical phrases!']");
+
     }
 }
